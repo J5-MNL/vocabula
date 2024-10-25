@@ -220,13 +220,13 @@ li {
 }
 
 .word {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 500;
   /* letter-spacing: .06125em; */
 }
 
 .partOfSpeech {
-  font-size: 1.125rem;
+  font-size: 1rem;
   font-style: italic;
   font-weight: 100;
   margin-left: .25em;
@@ -238,14 +238,9 @@ li {
   font-weight: 500;
 }
 
-.overall-word-wrapper {
-  flex: 10;
-}
-
 .pronunciation {
   border-radius: 50px;
-  flex: 1;
-  font-size: 3.5rem;
+  font-size: 3rem;
   transition: color 0.15s;
 }
 
@@ -356,6 +351,20 @@ li {
 @media(min-width: 600px) {
   html {
     font-size: 17px;
+  }
+
+  .word {
+    font-size: 3rem;
+  }
+  
+  .partOfSpeech {
+    font-size: 1.125rem;
+  }
+
+  .pronunciation {
+    border-radius: 50px;
+    font-size: 3.5rem;
+    transition: color 0.15s;
   }
 }
 
