@@ -157,7 +157,6 @@ li {
   color: inherit;
   font-size: 1.1rem;
   font-weight: 300;
-  text-transform: capitalize;
 }
 
 ::-webkit-search-cancel-button {
