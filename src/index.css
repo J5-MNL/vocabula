@@ -345,6 +345,15 @@ li {
   .pronunciation {
     margin-top: 0;
   }
+
+  .error-title {
+    font-size: 1.5rem;
+  }
+  
+  .error-message,
+  .error-resolution {
+    font-size: 1.1rem;
+  }
 }
 
 @media(min-width: 600px) {
