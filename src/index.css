@@ -212,6 +212,7 @@ li {
   align-items: center;
   display: flex;
   justify-content: space-between;
+  width: 100%;
 }
 
 .word-wrapper {
@@ -237,8 +238,13 @@ li {
   font-weight: 500;
 }
 
+.overall-word-wrapper {
+  flex: 10;
+}
+
 .pronunciation {
   border-radius: 50px;
+  flex: 1;
   font-size: 3.5rem;
   transition: color 0.15s;
 }
@@ -301,7 +307,8 @@ li {
 
 .source-url {
   color: var(--accent);
-  font-weight: 500;
+  font-weight: 500; 
+  width: 100%;
 }
 
 /* --- ERROR --- */
@@ -388,14 +395,14 @@ li {
   }
   
   .material-symbols-outlined-2 {
-    display: block;
+    display: initial;
+    left: .75em;
     position: relative;
-    right: 1.5em;
     z-index: 2;
   }
 
   .search-wrapper {
-    flex: 2;
+    flex: 1;
   }
 
   .error {

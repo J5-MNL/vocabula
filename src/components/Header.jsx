@@ -23,14 +23,14 @@ export default function Header(props) {
         </span>
       </header>
 
+      <span className="material-symbols-outlined material-symbols-outlined-2" onClick={switchTheme}>
+        contrast
+      </span>
+
       <div className="search-wrapper">
         <label className="label" htmlFor="search">What you're looking for?</label>
         <input type="search" name="" id="" placeholder="Type a word here" className="search-bar" onKeyDown={handleKeyPress} />
       </div>
-
-      <span className="material-symbols-outlined material-symbols-outlined-2" onClick={switchTheme}>
-        contrast
-      </span>
     </div>
   )
 }

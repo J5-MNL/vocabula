@@ -31,7 +31,7 @@ export default function Main(props) {
       <main className="main">
         <div className="section-1">
           <div className="wrapper-flex">
-            <div>
+            <div className="overall-word-wrapper">
               <div className="word-wrapper">
                 <div className="word">
                   {response ? word : ""}
@@ -44,6 +44,7 @@ export default function Main(props) {
                 {response ? phonetic : ""}
               </div>
             </div>
+
             <span className="material-symbols-outlined pronunciation" onClick={playAudio}>
               play_circle
             </span>
