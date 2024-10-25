@@ -1,0 +1,441 @@
+/* General */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+:root {
+  --accent: #78C1F3;
+  --light-alt: #606470;
+  --padding: 2rem 2.5rem;
+  --alt: #F8F6F4;
+  --main: #323643;
+}
+
+.dark-mode {
+  --accent: #78C1F3;
+  --alt: #323643;
+  --main: #F8F6F4;
+}
+
+body {
+  background-color: var(--alt);
+  color: var(--main);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+img,
+svg {
+  vertical-align: middle;
+}
+
+li {
+  font-weight: 400;
+  list-style: inside;
+}
+
+::-webkit-scrollbar {
+  background: rgba(96, 100, 112, .5);
+  height: 5px;
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(96, 100, 112, 1);
+  border-radius: 50px;
+  transition: all 0.2s;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent);
+  border-radius: 5px;
+}
+
+/* Fonts */
+
+.montserrat-100 {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.montserrat-400 {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.montserrat-500 {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.montserrat-700 {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.montserrat-900 {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+}
+
+/* Layout */
+
+/* --- HEADER --- */
+
+.header {
+  align-items: center;
+  background-color: var(--alt);
+  /* border-bottom: 1px solid rgba(96, 100, 112, .075); */
+  display: flex;
+  justify-content: space-between;
+  padding: var(--padding);
+  /* z-index: -1; */
+}
+
+.logo-title {
+  cursor: pointer;
+  font-size: 1.5rem;
+  font-weight: 100;
+}
+
+.logo-title-accent {
+  border-bottom: 1px solid var(--accent);
+  color: var(--accent);
+  font-weight: 100;
+}
+
+.icons {
+  display: flex;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+.material-symbols-outlined {
+  color: var(--main);
+  cursor: pointer;
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-left: 1em;
+  transition: color 0.15s;
+}
+
+.material-symbols-outlined:focus,
+.material-symbols-outlined:hover {
+  color: var(--accent);
+}
+
+/* .icons > * {
+  border: 1px solid var(--light-alt);
+  cursor: pointer;
+  margin-left: 1em;
+  transition: box-shadow .15s;
+} */
+
+.search-wrapper {
+  opacity: 1;
+  padding: 2rem;
+  position: relative;
+  transition: all .35s;
+  /* translate: 0% -100%; */
+  width: 100%;
+  z-index: 1;
+}
+
+.show-search-wrapper {
+  opacity: 0;
+  /* translate: 0% 0%; */
+  z-index: 1;
+}
+
+.label {
+  background: var(--alt);
+  color: var(--accent);
+  font-size: .85rem;
+  font-weight: 500;
+  padding: 0 .5rem;
+  position: absolute;
+  top: 1.7em;
+  left: 3.5em;
+}
+
+.search-bar {
+  background-color: var(--alt);
+  border: 1px solid var(--light-alt);
+  border-radius: 50px;
+  color: var(--main);
+  font-family: inherit;
+  font-size: 1.1rem;
+  outline: none;
+  padding: .65em 0;
+  text-indent: 1.5em;
+  width: 100%;
+}
+
+.search-bar::placeholder {
+  color: inherit;
+  font-size: 1.1rem;
+  font-weight: 100;
+}
+
+::-webkit-search-cancel-button {
+  display: none;
+}     
+
+.material-symbols-outlined-2 {
+  display: none;
+}
+
+/* --- MAIN --- */
+
+.main {
+  padding: var(--padding);
+}
+
+.wrapper-flex {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.word-wrapper {
+  display: flex;
+}
+
+.word {
+  font-size: 3rem;
+  font-weight: 500;
+  /* letter-spacing: .06125em; */
+}
+
+.partOfSpeech {
+  font-size: 1.125rem;
+  font-style: italic;
+  font-weight: 100;
+  margin-left: .25em;
+}
+
+.phoneme {
+  color: var(--accent);
+  font-style: italic;
+  font-weight: 500;
+}
+
+.pronunciation {
+  border-radius: 50px;
+  font-size: 3.5rem;
+  transition: color 0.15s;
+}
+
+.source-url-1 {
+  display: none;
+}
+
+.section-2 {
+  border-top: 1px solid var(--accent);
+  margin-top: 2em;
+  padding-top: 2em;
+}
+
+.word-1 {
+  margin-top: 1.5em;
+}
+
+.definition {
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+.example {
+  font-size: 1.125rem;
+  font-style: italic;
+  font-weight: 100;
+  margin-top: 1.5em;
+  /* text-transform: lowercase; */
+}
+
+.word-2 {
+  margin: 1.5em 0;
+  padding-bottom: 0em;
+}
+
+.alternativePartOfSpeech {
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-left: 0;
+}
+
+.definitions-list {
+  padding-left: 0em;
+}
+
+.alternative-definition {
+  font-size: 1.06125rem;
+}
+
+.alternative-example {
+  font-size: 1.06125rem;
+  margin-top: .75em;
+}
+
+.part-of-speech {
+  font-style: normal;
+  margin: 0 0 1em;
+}
+
+.source-url {
+  color: var(--accent);
+  font-weight: 500;
+}
+
+/* --- ERROR --- */
+
+.error {
+  /* border: 1px solid var(--accent); */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  min-height: 62.5vh;
+  padding: var(--padding);
+  /* text-align: center; */
+}
+
+.error-title {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.error-message {
+  font-size: 1.25rem;
+  font-weight: 100;
+  margin-top: .5em;
+  font-style: italic;
+}
+
+.error-resolution {
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+/* For this project, do responsiveness with  flexbox. For CinemaSpotter, use grid instead! */
+
+/* Media Queries */
+
+.header, 
+.search-wrapper,
+.main,
+.error {
+  /* border: 1px solid var(--accent); */
+  margin: 0 auto .125em;
+  max-width: 600px;
+}
+
+@media(min-width: 600px) {
+  html {
+    font-size: 17px;
+  }
+}
+
+@media(min-width: 1000px) {
+  html {
+    font-size: 18px;
+  }
+
+  ::-webkit-scrollbar {
+    width: 7.5px;
+  }
+
+  :root {
+    --padding: 3.5em 4em;
+  }
+
+  .header,
+  .header > *,
+  .search-wrapper,
+  .main,
+  .error {
+    max-width: none;
+  }
+
+  .header {
+    flex: 1;
+    justify-content: initial;
+  }
+
+  .header-wrapper {
+    align-items: center;
+    display: flex;
+  }
+
+  .material-symbols-outlined-1 {
+    display: none;
+  }
+  
+  .material-symbols-outlined-2 {
+    display: block;
+    position: relative;
+    right: 1.5em;
+    z-index: 2;
+  }
+
+  .search-wrapper {
+    flex: 2;
+  }
+
+  .error {
+    align-items: center;
+    flex-direction: row;
+    gap: 7.5em;
+  }
+
+  .main {
+    display: flex;
+  }
+
+  .section-1 {
+    border-right: 1px solid rgba(96, 100, 112, .5);
+    flex: 1;
+    padding-right: 3em;
+    vertical-align: top;
+  }
+
+  .section-2 {
+    border-top: none;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin: 0;
+    padding-left: 3em;
+    vertical-align: top;
+  }
+
+  .source-url-1 {
+    display: block;
+    margin-top: 2em;
+  }
+
+  .source-url-2 {
+    border-top: none;
+    display: none;
+  }
+
+  .alternativePartOfSpeech {
+    text-align: center;
+  }
+}
