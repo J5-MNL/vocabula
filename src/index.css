@@ -149,6 +149,7 @@ li {
   outline: none;
   padding: .65em 0;
   text-indent: 1.5em;
+  text-transform: lowercase;
   width: 100%;
 }
 
@@ -280,7 +281,7 @@ li {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  /* min-height: 62.5vh; */
+  min-height: 62.5vh;
   padding: var(--padding);
   /* text-align: center; */
 }
@@ -343,15 +344,6 @@ li {
 
   .pronunciation {
     margin-top: 0;
-  }
-
-  .error-title {
-    font-size: 1.5rem;
-  }
-  
-  .error-message,
-  .error-resolution {
-    font-size: 1.1rem;
   }
 }
 
@@ -424,7 +416,7 @@ li {
   .error {
     align-items: center;
     flex-direction: row;
-    gap: 5rem;
+    gap: 7.5rem;
   }
 
   .main {
