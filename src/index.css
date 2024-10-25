@@ -280,7 +280,7 @@ li {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  min-height: 62.5vh;
+  /* min-height: 62.5vh; */
   padding: var(--padding);
   /* text-align: center; */
 }
@@ -424,7 +424,7 @@ li {
   .error {
     align-items: center;
     flex-direction: row;
-    justify-content: space-between;
+    gap: 5rem;
   }
 
   .main {
