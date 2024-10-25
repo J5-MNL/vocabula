@@ -206,6 +206,7 @@ li {
 
 .main {
   padding: var(--padding);
+  width: 100%;
 }
 
 .wrapper-flex {
@@ -220,13 +221,13 @@ li {
 }
 
 .word {
-  font-size: 2.5rem;
+  font-size: 2.25rem;
   font-weight: 500;
   /* letter-spacing: .06125em; */
 }
 
 .partOfSpeech {
-  font-size: 1rem;
+  font-size: .95rem;
   font-style: italic;
   font-weight: 100;
   margin-left: .25em;
@@ -240,7 +241,7 @@ li {
 
 .pronunciation {
   border-radius: 50px;
-  font-size: 3rem;
+  font-size: 2.75rem;
   transition: color 0.15s;
 }
 
