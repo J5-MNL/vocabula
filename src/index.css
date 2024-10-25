@@ -221,13 +221,13 @@ li {
 }
 
 .word {
-  font-size: 2.25rem;
+  font-size: 2.5rem;
   font-weight: 500;
   /* letter-spacing: .06125em; */
 }
 
 .partOfSpeech {
-  font-size: .95rem;
+  font-size: 1.125rem;
   font-style: italic;
   font-weight: 100;
   margin-left: .25em;
@@ -241,7 +241,8 @@ li {
 
 .pronunciation {
   border-radius: 50px;
-  font-size: 2.75rem;
+  font-size: 3rem;
+  margin: 0;
   transition: color 0.15s;
 }
 
@@ -305,6 +306,7 @@ li {
   color: var(--accent);
   font-weight: 500; 
   width: 100%;
+  word-wrap: break-word;
 }
 
 /* --- ERROR --- */
@@ -347,6 +349,14 @@ li {
   /* border: 1px solid var(--accent); */
   margin: 0 auto .125em;
   max-width: 600px;
+}
+
+@media(max-width: 350px) {
+  .wrapper-flex {
+    align-items: center;
+    display: flex;
+    width: 100%;
+  }
 }
 
 @media(min-width: 600px) {
