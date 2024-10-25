@@ -292,7 +292,7 @@ li {
 
 .error-message {
   font-size: .85;
-  font-weight: 200;
+  font-weight: 300;
   margin-top: .5em;
 }
 
@@ -346,12 +346,12 @@ li {
   }
 
   .error-title {
-    font-size: 2rem;
+    font-size: 1.65rem;
   }
   
   .error-message,
   .error-resolution {
-    font-size: 1.25rem;
+    font-size: 1.1rem;
   }
 }
 
